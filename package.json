@@ -1,0 +1,57 @@
+{
+  "name": "@yacinthos/loopback-component-user-manager",
+  "version": "1.0.0",
+  "description": "User manager components for Loopback",
+  "main": "./lib/index.js",
+  "scripts": {
+    "lint": "eslint './{lib,test}/**/*.js'",
+    "test": "NODE_ENV=test nyc --reporter=lcov --reporter=text --reporter=text-summary mocha test/*test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yacinthos/loopback-component-user-manager.git"
+  },
+  "keywords": [
+    "user-manager",
+    "loopback"
+  ],
+  "author": "“yacinthos” <“yacintho@live.fr”>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yacinthos/loopback-component-user-manager/issues"
+  },
+  "homepage": "https://github.com/yacinthos/loopback-component-user-manager#readme",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "debug": "^2.6.8",
+    "lodash": "^4.17.4"
+  },
+  "peerDependencies": {
+    "loopback-context": "^3.1.0",
+    "cls-hooked": "^4.1.5"
+  },
+  "devDependencies": {
+    "@bubltechnology/customizable-commit-analyzer": "^1.0.2-0",
+    "chai": "^4.0.2",
+    "chai-tbd": "0.1.0",
+    "condition-circle": "^1.5.0",
+    "coveralls": "latest",
+    "dirty-chai": "2.0.1",
+    "eslint": "^4.1.0",
+    "eslint-config-fullcube": "^3.0.0",
+    "loopback": "^3.4.0",
+    "loopback-boot": "^2.24.0",
+    "loopback-component-explorer": "2.3.0",
+    "loopback-context": "^3.1.0",
+    "cls-hooked": "^4.1.5",
+    "loopback-component-fixtures": "^1.1.0",
+    "mocha": "^3.4.1",
+    "mocha-sinon": "latest",
+    "nyc": "latest",
+    "sinon": "latest",
+    "sinon-chai": "latest",
+    "strong-error-handler": "^2.1.0",
+    "supertest": "^3.0.0",
+    "semantic-release": "^6.3.6"
+  }
+}

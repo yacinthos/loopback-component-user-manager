@@ -1,0 +1,35 @@
+{
+  "name": "group",
+  "base": "PersistedModel",
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "string",
+      "id": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "roles": {
+      "type": "hasMany",
+      "model": "role",
+      "foreignKey": "groupId",
+      "through": "groupRoleMapping",
+      "options": {
+        "disableInclude": false
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
