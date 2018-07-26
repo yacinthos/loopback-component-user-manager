@@ -1,6 +1,6 @@
 {
   "name": "@yacinthos/loopback-component-user-manager",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "User manager components for Loopback",
   "main": "./lib/index.js",
   "scripts": {
@@ -19,6 +19,9 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/yacinthos/loopback-component-user-manager/issues"
+  },
+  "engines": {
+    "node": ">=4.2.4"
   },
   "homepage": "https://github.com/yacinthos/loopback-component-user-manager#readme",
   "dependencies": {
