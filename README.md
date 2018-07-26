@@ -215,7 +215,7 @@ groupRoleMapping is a through Relation Model for the Many to Many relation betwe
 ## Installation 
 
 ```sh
-$ npm install loopback-component-user-manager --save
+$ npm install @yacinthos/loopback-component-user-manager --save
 
 ```
 
@@ -226,7 +226,7 @@ $ npm install loopback-component-user-manager --save
 Add component configuration option in `server/component-config.json`.
 
 ``` json
-"loopback-component-user-manager": {
+"@yacinthos/loopback-component-user-manager": {
     "userModel": "user",
     "roleModel":"role",
     "groupModel":"group"
@@ -243,7 +243,7 @@ Add component configuration option in `server/component-config.json`.
 
 ### `Setup models loopback-component-user-manager model source`
 
-- Add model source `loopback-component-user-manager/models` in `server/model-config.json` under `sources` option.
+- Add model source `@yacinthos/loopback-component-user-manager` in `server/model-config.json` under `sources` option.
 
 - Add **user, group, role, groupRoleMapping** models configuration  in `server/model-config.json`
 
@@ -253,7 +253,7 @@ Add component configuration option in `server/component-config.json`.
   "_meta": {
       "sources": [
         ...,
-        "loopback-component-user-manager/models",
+        "@yacinthos/loopback-component-user-manager",
         ...
       ],
       ...
